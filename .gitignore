@@ -5,7 +5,6 @@
 /.pnp
 .pnp.js
 .gitignore
-.babelrc
 
 
 # testing
