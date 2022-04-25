@@ -106,7 +106,8 @@ const AboutPage = () => {
             optimized.
             <br /> <br />
             I&apos;m interested in all the full-stack stuff, like trying new
-            things and building projects big or small. I'm a freelancer for fun.
+            things and building projects big or small. I&apos;m a freelancer for
+            fun.
             <br /> <br />
             My focus as a developer is to improve my career and to specialize in
             javascript and improve it every day
