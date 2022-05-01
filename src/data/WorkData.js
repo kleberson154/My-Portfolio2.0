@@ -34,6 +34,16 @@ export const Work = [
   },
   {
     id: 4,
+    name: 'Todo-List',
+    image: '/images/Todo.png',
+    description: 'classic todo-list made with react, html and css',
+    tags: ['React', 'Html', 'Css'],
+
+    demo: 'https://todo-list-dun-sigma.vercel.app/',
+    github: 'https://github.com/kleberson154/Todo-List'
+  },
+  {
+    id: 5,
     name: 'old portfolio',
     image: '/images/old-portfolio.png',
     description: 'my old portfolio in react with ui/ux methods',
@@ -43,7 +53,7 @@ export const Work = [
     github: 'https://github.com/kleberson154/portfolio-updated'
   },
   {
-    id: 5,
+    id: 6,
     name: 'Instagram-Login',
     image: '/images/instagram.png',
     description:
@@ -54,7 +64,7 @@ export const Work = [
     github: 'https://github.com/kleberson154/Instagram'
   },
   {
-    id: 6,
+    id: 7,
     name: 'Login and Register',
     image: '/images/login-register.png',
     description:
@@ -65,7 +75,7 @@ export const Work = [
     github: 'https://github.com/kleberson154/login-and-register'
   },
   {
-    id: 7,
+    id: 8,
     name: 'Snake Game',
     image: '/images/snake-game.png',
     description: 'classic snake game made with pure javascript',
@@ -75,7 +85,7 @@ export const Work = [
     github: 'https://github.com/kleberson154/SnakeGame'
   },
   {
-    id: 8,
+    id: 9,
     name: '404-Not Found',
     image: '/images/404.png',
     description: 'custom 404 error lading page with html and css',
