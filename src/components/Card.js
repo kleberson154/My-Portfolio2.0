@@ -102,10 +102,11 @@ const Git = styled.button`
   background-color: ${props => props.theme.body};
   color: ${props => props.theme.text};
   text-decoration: none;
-  padding: 0.5rem calc(2rem + 1.4vw);
+  padding: 0.4rem calc(2rem + 1.4vw);
   border-radius: 0 25px 25px 0;
   font-size: calc(1em + 0.5vw);
   border: 0;
+  align-items: center;
 `
 const Item = {
   hidden: {
@@ -135,11 +136,17 @@ const Card = props => {
       </Tags>
       <Footer>
         <Link href={{ pathname: `${demo}` }} passHref={true} target="_blank">
-          <Button>visit</Button>
+          <a target="_blank" rel="noreferrer">
+            <Button>visit</Button>
+          </a>
         </Link>
-        <Git to={{ pathname: `${github}` }} passHref={true} target="_blank">
-          <BsGithub width={30} height={30} />
-        </Git>
+        <Link href={{ pathname: `${github}` }} passHref={true} target="_blank">
+          <a target="_blank" rel="noreferrer">
+            <Git>
+              <BsGithub width={30} height={30} />
+            </Git>
+          </a>
+        </Link>
       </Footer>
     </Box>
   )

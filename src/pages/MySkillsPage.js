@@ -195,7 +195,7 @@ const MySkillsPage = () => {
                 <Ulskill>
                   <Liskill>
                     Html, Css, Js, React, NextJs, ChakraUI, Tailwind,
-                    Styled-Components, Firebase, NodeJs, ExpressJS.
+                    Styled-Components, Firebase, NodeJs, ExpressJS, MySQL.
                   </Liskill>
                 </Ulskill>
               </Description>

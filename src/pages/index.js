@@ -141,7 +141,6 @@ export default function Home() {
         {/* fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <meta name="robots" content="noindex" />
         <meta
           name="description"
           content="Portfolio created by kleberson Andrade - Developer Full-Stack"

@@ -1,68 +1,87 @@
 export const Work = [
   {
     id: 1,
-    name: 'Agency Landing Page',
+    name: 'nftlading',
     image: '/images/nft.png',
     description:
-      'It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.',
-    tags: ['react', 'gsap', 'styledComponents'],
+      'nft landing page made in react with more modern animations and light and dark mode',
+    tags: ['React', 'Sass', 'Javascript'],
 
-    demo: 'https://agency-website-eta.vercel.app/',
-    github: 'https://github.com/codebucks27/Agency-website'
+    demo: 'http://nftlading.vercel.app/',
+    github: 'https://github.com/kleberson154/nftlading'
   },
   {
     id: 2,
-    name: 'Job listing website',
-    image: '/images/nft.png',
+    name: 'Cryptocurrency site',
+    image: '/images/Crypto.png',
     description:
-      'A Job listing website build in ReactJS. With searching and filtering functionalities.',
-    tags: ['react', 'sass'],
+      'Cryptocurrency site made in react with api consumption with axios',
+    tags: ['React', 'API', 'Axios'],
 
-    demo: 'http://react-job-listing-website.codebucks27.vercel.app/',
-    github: 'https://github.com/codebucks27/react-job-listing-website'
+    demo: 'https://cryptocurrency-lyart.vercel.app/',
+    github: 'https://github.com/kleberson154/Cryptocurrency'
   },
   {
     id: 3,
-    name: 'Dev.to Clone',
-    image: '/images/nft.png',
+    name: 'Modern UI/UX',
+    image: '/images/modern-ui-ux.png',
     description:
-      'A clone of Dev.to build using ReactJS. With realtime fetching of articles from dev.to using API.',
-    tags: ['react', 'api', 'sass'],
+      'nft landing page made in react with the design made in ui/ux methods',
+    tags: ['React', 'UI/UX'],
 
-    demo: 'http://devto-clone-codebucks27.vercel.app/',
-    github: 'https://github.com/codebucks27/devto-clone'
+    demo: 'http://modern-ui-ux-lemon.vercel.app/',
+    github: 'https://github.com/kleberson154/Modern-ui-ux'
   },
   {
     id: 4,
-    name: 'Sidebar Menu',
-    image: '/images/nft.png',
-    description:
-      'A cool looking sidebar menu build using ReactJS and styledComponents.It has really smooth animations.',
-    tags: ['react', 'styledComponents', 'react-router'],
+    name: 'old portfolio',
+    image: '/images/old-portfolio.png',
+    description: 'my old portfolio in react with ui/ux methods',
+    tags: ['React', 'UI/UX'],
 
-    demo: 'https://react-sidebar.vercel.app/',
-    github: 'https://github.com/codebucks27/react-sidebar'
+    demo: 'https://portkleber.vercel.app/',
+    github: 'https://github.com/kleberson154/portfolio-updated'
   },
   {
     id: 5,
-    name: 'Todo App(React + Redux)',
-    image: '/images/nft.png',
+    name: 'Instagram-Login',
+    image: '/images/instagram.png',
     description:
-      'A todo app build using Redux-toolkit and framer-motion for smooth animations.',
-    tags: ['react', 'redux', 'framer-motion'],
+      'Clone of instagram web login lading page with only html and css',
+    tags: ['Html', 'Css'],
 
-    demo: 'http://react-redux-todo-app-git-main-codebucks27.vercel.app/',
-    github: 'https://github.com/codebucks27/React-Redux-Todo-App'
+    demo: 'https://instagram-one-neon.vercel.app/',
+    github: 'https://github.com/kleberson154/Instagram'
   },
   {
     id: 6,
-    name: 'Responsive Navigation Menu',
-    image: '/images/nft.png',
+    name: 'Login and Register',
+    image: '/images/login-register.png',
     description:
-      'A reponsive navbar menu component in ReactJS with react-router functionalities. Built from scratch.',
-    tags: ['react', 'react-router', 'css'],
+      'login page with route to register made from scratch with react',
+    tags: ['React', 'Css', 'Html'],
 
-    demo: 'http://react-responsive-navbar-codebucks27.vercel.app/',
-    github: 'https://github.com/codebucks27/React-responsive-navbar'
+    demo: 'https://login-and-register-jade.vercel.app/',
+    github: 'https://github.com/kleberson154/login-and-register'
+  },
+  {
+    id: 7,
+    name: 'Snake Game',
+    image: '/images/snake-game.png',
+    description: 'classic snake game made with pure javascript',
+    tags: ['Javascript', 'Html', 'Css'],
+
+    demo: 'http://snake-game-lime.vercel.app/',
+    github: 'https://github.com/kleberson154/SnakeGame'
+  },
+  {
+    id: 8,
+    name: '404-Not Found',
+    image: '/images/404.png',
+    description: 'custom 404 error lading page with html and css',
+    tags: ['Html', 'Css'],
+
+    demo: 'https://page-404-tau.vercel.app/',
+    github: 'https://github.com/kleberson154/page-404'
   }
 ]
