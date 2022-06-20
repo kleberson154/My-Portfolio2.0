@@ -22,22 +22,27 @@ const Box = styled.div`
   height: 200vh;
   position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
   user-select: none;
 `
 
-const Main = styled(motion.ul)`
+const Main = styled(motion.div)`
   position: fixed;
   top: 4rem;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  @media (max-width: 1348px) {
+    top: 6rem;
+    left: 8rem;
+    right: 2rem;
+  }
 
-  color: white;
   @media (max-width: 500px) {
     top: 6rem;
-    left: 1rem;
+    left: 4rem;
+    right: 1rem;
   }
 `
 const Rotate = styled.span`
@@ -99,6 +104,7 @@ const Certificates = () => {
               <CardCert key={d.id} data={d} />
             ))}
           </Main>
+
           <Rotate ref={yinyang}>
             <YinYang width={80} height={80} fill={lightTheme.text} />
           </Rotate>

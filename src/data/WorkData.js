@@ -99,10 +99,10 @@ export const Work = [
 export const Certificate = [
   {
     id: 1,
-    image: '/images/CertConect.jpg'
+    image: '/images/CertConect.png'
   },
   {
     id: 2,
-    image: '/images/CertFunda.jpg'
+    image: '/images/CertFunda.png'
   }
 ]
