@@ -17,6 +17,7 @@ import Intro from '../components/Intro'
 //Framer-motion
 import { motion } from 'framer-motion'
 import SoundBar from '../components/SoundBar'
+import Link from 'next/link'
 
 const MainContainer = styled.div`
   background: ${props => props.theme.body};
@@ -53,6 +54,18 @@ const Work = styled.a`
   transform: rotate(90deg) translate(-50%, -50%);
   text-decoration: none;
   z-index: 1;
+`
+const Certificates = styled.a`
+  color: ${props => props.theme.text};
+  position: absolute;
+  top: 48%;
+  left: calc(1rem + 0.5vw);
+  transform: rotate(270deg);
+  text-decoration: none;
+  z-index: 1;
+  @media (max-width: 500px) {
+    left: -2rem;
+  }
 `
 
 const BottomBar = styled.div`
@@ -118,18 +131,6 @@ const Center = styled(motion.button)`
   }
 `
 
-const DarkDiv = styled.div`
-  position: absolute;
-  background-color: #000;
-  top: 0;
-  bottom: 0;
-  right: 50%;
-  width: ${props => (props.click ? '50%' : '0%')};
-  height: ${props => (props.click ? '100%' : '0%')};
-  z-index: 1;
-  transition: height 0.5s ease, width 1s ease 0.5s;
-`
-
 export default function Home() {
   const [click, setClick] = useState(false)
 
@@ -152,13 +153,11 @@ export default function Home() {
       </Head>
       <ThemeProvider theme={lightTheme}>
         <MainContainer>
-          <DarkDiv click={click} />
-
           <Container>
-            <PowerButton />
-            <Logo theme={click ? 'dark' : 'light'} />
+            <PowerButton alt="Go to HomePage" />
+            <Logo />
             <SoundBar />
-            <SocialIcons theme={click ? 'dark' : 'light'} />
+            <SocialIcons />
 
             <Center
               click={click}
@@ -191,7 +190,7 @@ export default function Home() {
                 Say hi..
               </motion.h2>
             </Contact>
-            <Work href="/WorkPage">
+            <Work>
               <motion.h2
                 initial={{
                   y: -200,
@@ -204,11 +203,27 @@ export default function Home() {
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
               >
-                Work
+                <Link href={'/WorkPage'}>Work</Link>
               </motion.h2>
             </Work>
+            <Certificates>
+              <motion.h2
+                initial={{
+                  y: -200,
+                  transition: { type: 'spring', duration: 1.5, delay: 1 }
+                }}
+                animate={{
+                  y: 0,
+                  transition: { type: 'spring', duration: 1.5, delay: 1 }
+                }}
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Link href={'/Certificates'}>Certificates</Link>
+              </motion.h2>
+            </Certificates>
             <BottomBar>
-              <About href="/AboutPage" click={click}>
+              <About>
                 <motion.h2
                   initial={{
                     y: 200,
@@ -221,10 +236,10 @@ export default function Home() {
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
                 >
-                  About
+                  <Link href={'/AboutPage'}>About</Link>
                 </motion.h2>
               </About>
-              <Skill href="/MySkillsPage">
+              <Skill>
                 <motion.h2
                   initial={{
                     y: 200,
@@ -237,12 +252,11 @@ export default function Home() {
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
                 >
-                  My Skills
+                  <Link href={'/MySkillsPage'}>My Skills</Link>
                 </motion.h2>
               </Skill>
             </BottomBar>
           </Container>
-
           {click ? <Intro click={click} /> : null}
         </MainContainer>
       </ThemeProvider>

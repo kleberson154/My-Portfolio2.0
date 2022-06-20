@@ -3,23 +3,23 @@ import styled, { ThemeProvider } from 'styled-components'
 import { motion } from 'framer-motion'
 
 //theme
-import { DarkTheme } from '../components/Themes'
+import { lightTheme } from '../components/Themes'
 
 //components
 import LogoComponent from '../components/LogoComponent'
 import SocialIcons from '../components/SocialIcons'
 import PowerButton from '../components/PowerButton'
-import AmongusParticle from '../components/AmongusParticle'
+import ParticleComponent from '../components/ParticleComponent'
 import SoundBar from '../components/SoundBar'
 
-import { Work } from '../data/WorkData'
-import Card from '../components/Card'
+import { Certificate } from '../data/WorkData'
+import CardCert from '../components/CardCert'
 import { YinYang } from '../components/AllSvgs'
 
 //style
 const Box = styled.div`
   background-color: ${props => props.theme.body};
-  height: 500vh;
+  height: 200vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -29,15 +29,15 @@ const Box = styled.div`
 
 const Main = styled(motion.ul)`
   position: fixed;
-  top: 12rem;
-  left: calc(10rem + 15vw);
-  height: 40vh;
+  top: 4rem;
   display: flex;
+  align-items: center;
+  flex-direction: column;
 
   color: white;
   @media (max-width: 500px) {
-    top: 7.3rem;
-    left: -0.3rem;
+    top: 6rem;
+    left: 1rem;
   }
 `
 const Rotate = styled.span`
@@ -64,7 +64,7 @@ const container = {
 }
 
 //html
-const WorkPage = () => {
+const Certificates = () => {
   const ref = useRef(null)
   const yinyang = useRef(null)
 
@@ -72,7 +72,7 @@ const WorkPage = () => {
     let element = ref.current
 
     const rotate = () => {
-      element.style.transform = `translateX(${-window.pageYOffset}px)`
+      element.style.transform = `translateY(${-window.pageYOffset}px)`
 
       return (yinyang.current.style.transform =
         'rotate(' + -window.pageYOffset + 'deg)')
@@ -86,21 +86,21 @@ const WorkPage = () => {
 
   return (
     <motion.div exit={{ opacity: 0 }}>
-      <ThemeProvider theme={DarkTheme}>
+      <ThemeProvider theme={lightTheme}>
         <Box>
-          <LogoComponent theme="dark" />
+          <LogoComponent theme="light" />
           <SoundBar />
-          <SocialIcons theme="dark" />
+          <SocialIcons theme="light" />
           <PowerButton alt="Go to HomePage" />
-          <AmongusParticle />
+          <ParticleComponent />
 
           <Main ref={ref} variants={container} initial="hidden" animate="show">
-            {Work.map(d => (
-              <Card key={d.id} data={d} />
+            {Certificate.map(d => (
+              <CardCert key={d.id} data={d} />
             ))}
           </Main>
           <Rotate ref={yinyang}>
-            <YinYang width={80} height={80} fill={DarkTheme.text} />
+            <YinYang width={80} height={80} fill={lightTheme.text} />
           </Rotate>
         </Box>
       </ThemeProvider>
@@ -108,4 +108,4 @@ const WorkPage = () => {
   )
 }
 
-export default WorkPage
+export default Certificates

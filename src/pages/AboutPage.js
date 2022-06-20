@@ -82,7 +82,7 @@ const AboutPage = () => {
           <LogoComponent theme="dark" />
           <SoundBar />
           <SocialIcons theme="dark" />
-          <PowerButton />
+          <PowerButton alt="Go to HomePage" />
           <SpaceParticle />
 
           <Spaceman>

@@ -145,7 +145,7 @@ const MySkillsPage = () => {
           <LogoComponent theme="light" />
           <SoundBar />
           <SocialIcons theme="light" />
-          <PowerButton />
+          <PowerButton alt="Go to HomePage" />
           <ParticleComponent />
 
           <Tab

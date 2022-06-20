@@ -95,3 +95,14 @@ export const Work = [
     github: 'https://github.com/kleberson154/page-404'
   }
 ]
+
+export const Certificate = [
+  {
+    id: 1,
+    image: '/images/CertConect.jpg'
+  },
+  {
+    id: 2,
+    image: '/images/CertFunda.jpg'
+  }
+]

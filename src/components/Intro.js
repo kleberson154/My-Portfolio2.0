@@ -10,62 +10,63 @@ const Box = styled(motion.div)`
   width: 55vw;
   height: 55vh;
   display: flex;
-
-  background: linear-gradient(
-        to right,
-        ${props => props.theme.body} 50%,
-        ${props => props.theme.text} 50%
-      )
-      bottom,
-    linear-gradient(
-        to right,
-        ${props => props.theme.body} 50%,
-        ${props => props.theme.text} 50%
-      )
-      top;
-
-  border-left: 2px solid ${props => props.theme.body};
-  border-right: 2px solid ${props => props.theme.text};
+  border: 2px solid #000;
   background-repeat: no-repeat;
   background-size: 100% 2px;
 
   z-index: 1;
 
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     position: absolute;
     top: 22rem;
-    width: 22rem;
+    width: 60%;
     display: flex;
-    /*     flex-direction: column;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center; */
+    align-items: center;
   }
 `
 
-const SubBox = styled.div`
+const SubBoxOne = styled.div`
   width: 50%;
+  height: 100%;
   position: relative;
   display: flex;
+  @media (max-width: 700px) {
+    width: 100%;
+    height: 50%;
+  }
+`
 
+const SubBoxTwo = styled.div`
   .pic {
     position: absolute;
-    bottom: 2px;
-    left: 50%;
+    bottom: 0px;
+    left: 75%;
     transform: translate(-50%, 0%);
-    width: 130%;
+    width: 73%;
+  }
+
+  @media (max-width: 700px) {
+    .pic {
+      position: absolute;
+      left: 50%;
+      width: 73%;
+    }
   }
 
   @media (max-width: 500px) {
     .pic {
-      position: fixed;
-      width: 100%;
+      position: absolute;
+      left: 50%;
+      width: 120%;
     }
   }
 `
 
 const Text = styled.div`
   font-size: calc(1em + 1.5vw);
-  color: ${props => props.theme.body};
+  color: #000;
   padding: 2rem;
   cursor: pointer;
 
@@ -74,9 +75,13 @@ const Text = styled.div`
   justify-content: space-evenly;
 
   & > *:last-child {
-    color: ${props => `rgba(${props.theme.bodyRgba},0.6)`};
+    color: #000;
     font-size: calc(0.5rem + 1.5vw);
     font-weight: 300;
+  }
+  @media (max-width: 700px) {
+    padding: 8px 0 0 10px;
+    justify-content: flex-start;
   }
   @media (max-width: 500px) {
     padding: 8px 0 0 10px;
@@ -89,24 +94,24 @@ const Intro = () => {
     <Box
       initial={{ height: 0 }}
       animate={{ height: '50vh' }}
-      transition={{ type: 'spring', duration: 2, delay: 1 }}
+      transition={{ type: 'spring', duration: 2, delay: 0.3 }}
     >
-      <SubBox>
-        <Text>
-          <h1>Hi,</h1>
-          <h3>I&apos;m Kleberson</h3>
-          <h6>I design and Code simple yet beautiful websites</h6>
-        </Text>
-      </SubBox>
-      <SubBox>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2 }}
-        >
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+      >
+        <SubBoxOne>
+          <Text>
+            <h1>Hi,</h1>
+            <h3>I&apos;m Kleberson</h3>
+            <h6>I design and Code simple yet beautiful websites</h6>
+          </Text>
+        </SubBoxOne>
+        <SubBoxTwo>
           <img src="/images/profile.png" className="pic" alt="Profile Pic" />
-        </motion.div>
-      </SubBox>
+        </SubBoxTwo>
+      </motion.div>
     </Box>
   )
 }

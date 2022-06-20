@@ -11,11 +11,11 @@ const Power = styled(motion.button)`
   transform: translate(-50%, 0);
 
   background-color: #fcf6f4;
-  padding: 0.3rem;
+  padding: 0.4rem;
   border-radius: 50%;
   border: 1px solid #000;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.4rem;
+  height: 2.4rem;
 
   display: flex;
   justify-content: center;
@@ -25,7 +25,7 @@ const Power = styled(motion.button)`
   cursor: pointer;
 
   &:hover {
-    background-color: rgba(0, 255, 0, 0.4);
+    background-color: rgba(0, 255, 0, 0.8);
     box-shadow: 0 0 8px 6px rgba(0, 255, 0, 0.2);
   }
 
@@ -34,7 +34,7 @@ const Power = styled(motion.button)`
     color: inherit;
   }
   @media (max-width: 500px) {
-    left: 46%;
+    left: 45%;
   }
 `
 
