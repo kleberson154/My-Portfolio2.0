@@ -95,7 +95,7 @@ const WorkPage = () => {
           <AmongusParticle />
 
           <Main ref={ref} variants={container} initial="hidden" animate="show">
-            {Work.map(d => (
+            {Work.reverse().map(d => (
               <Card key={d.id} data={d} />
             ))}
           </Main>

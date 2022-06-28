@@ -11,7 +11,7 @@ const Box = styled(motion.li)`
   color: ${props => props.theme.body};
   padding: 0 1.5rem 2rem;
   margin-right: 8rem;
-  border-radius: 0 50px 0 50px;
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,10 +102,11 @@ const Git = styled.button`
   background-color: ${props => props.theme.body};
   color: ${props => props.theme.text};
   text-decoration: none;
-  padding: 0.4rem calc(2rem + 1.4vw);
+  padding: 0.64rem calc(2rem + 1.4vw);
   border-radius: 0 25px 25px 0;
   font-size: calc(1em + 0.5vw);
   border: 0;
+  display: flex;
   align-items: center;
 `
 const Item = {
