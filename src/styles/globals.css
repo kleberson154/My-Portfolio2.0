@@ -14,3 +14,19 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 0.6rem;
+
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #33ccff;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0099ff;
+}
