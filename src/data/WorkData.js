@@ -104,6 +104,16 @@ export const Work = [
 
     demo: 'https://page-headphones.vercel.app/',
     github: 'https://github.com/kleberson154/Page-headphones'
+  },
+  {
+    id: 11,
+    name: 'Tesla Clone',
+    image: '/images/tesla-clone.png',
+    description: 'A responsive tesla website with training goals',
+    tags: ['REVEAL.JS', 'REDUX', 'React'],
+
+    demo: 'https://clone-tesla-gilt.vercel.app/',
+    github: 'https://github.com/kleberson154/Clone-tesla'
   }
 ]
 
