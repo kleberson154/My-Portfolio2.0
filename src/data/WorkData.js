@@ -2,7 +2,7 @@ export const Work = [
   {
     id: 1,
     name: '404-Not Found',
-    image: '/images/404.png',
+    image: '/images/Projects/404.png',
     description: 'custom 404 error lading page with html and css',
     tags: ['Html', 'Css'],
 
@@ -12,17 +12,16 @@ export const Work = [
   {
     id: 2,
     name: 'Snake Game',
-    image: '/images/snake-game.png',
+    image: '/images/Projects/snake-game.png',
     description: 'classic snake game made with pure javascript',
     tags: ['Javascript', 'Html', 'Css'],
-
     demo: 'http://snake-game-lime.vercel.app/',
     github: 'https://github.com/kleberson154/SnakeGame'
   },
   {
     id: 3,
     name: 'Login and Register',
-    image: '/images/login-register.png',
+    image: '/images/Projects/login-register.png',
     description:
       'login page with route to register made from scratch with react',
     tags: ['React', 'Css', 'Html'],
@@ -33,7 +32,7 @@ export const Work = [
   {
     id: 4,
     name: 'Instagram-Login',
-    image: '/images/instagram.png',
+    image: '/images/Projects/instagram.png',
     description:
       'Clone of instagram web login lading page with only html and css',
     tags: ['Html', 'Css'],
@@ -43,18 +42,8 @@ export const Work = [
   },
   {
     id: 5,
-    name: 'old portfolio',
-    image: '/images/old-portfolio.png',
-    description: 'my old portfolio in react with ui/ux methods',
-    tags: ['React', 'UI/UX'],
-
-    demo: 'https://portkleber.vercel.app/',
-    github: 'https://github.com/kleberson154/portfolio-updated'
-  },
-  {
-    id: 6,
     name: 'Todo-List',
-    image: '/images/Todo.png',
+    image: '/images/Projects/Todo.png',
     description: 'classic todo-list made with react, html and css',
     tags: ['React', 'Html', 'Css'],
 
@@ -62,20 +51,9 @@ export const Work = [
     github: 'https://github.com/kleberson154/Todo-List'
   },
   {
-    id: 7,
-    name: 'Modern UI/UX',
-    image: '/images/modern-ui-ux.png',
-    description:
-      'nft landing page made in react with the design made in ui/ux methods',
-    tags: ['React', 'UI/UX'],
-
-    demo: 'http://modern-ui-ux-lemon.vercel.app/',
-    github: 'https://github.com/kleberson154/Modern-ui-ux'
-  },
-  {
-    id: 8,
+    id: 6,
     name: 'Cryptocurrency site',
-    image: '/images/Crypto.png',
+    image: '/images/Projects/Crypto.png',
     description:
       'Cryptocurrency site made in react with api consumption with axios',
     tags: ['React', 'API', 'Axios'],
@@ -84,9 +62,41 @@ export const Work = [
     github: 'https://github.com/kleberson154/Cryptocurrency'
   },
   {
+    id: 7,
+    name: 'Landing Kreed',
+    image: '/images/Projects/landingKreed.png',
+    description:
+      'Landing page made with react and typescript components, with Atomic Design folder structure',
+    tags: ['React', 'TypeScript', 'Atomic Design'],
+
+    demo: 'https://cryptocurrency-lyart.vercel.app/',
+    github: 'https://github.com/kleberson154/Cryptocurrency'
+  },
+  {
+    id: 8,
+    name: 'old portfolio',
+    image: '/images/Projects/oldPortfolio.png',
+    description: 'my old portfolio in react with ui/ux methods',
+    tags: ['React', 'UI/UX'],
+
+    demo: 'https://portkleber.vercel.app/',
+    github: 'https://github.com/kleberson154/portfolio-updated'
+  },
+  {
     id: 9,
+    name: 'Modern UI/UX',
+    image: '/images/Projects/modern-ui-ux.png',
+    description:
+      'nft landing page made in react with the design made in ui/ux methods',
+    tags: ['React', 'UI/UX'],
+
+    demo: 'http://modern-ui-ux-lemon.vercel.app/',
+    github: 'https://github.com/kleberson154/Modern-ui-ux'
+  },
+  {
+    id: 10,
     name: 'nftlading',
-    image: '/images/nft.png',
+    image: '/images/Projects/nft.png',
     description:
       'nft landing page made in react with more modern animations and light and dark mode',
     tags: ['React', 'Sass', 'Javascript'],
@@ -95,9 +105,9 @@ export const Work = [
     github: 'https://github.com/kleberson154/nftlading'
   },
   {
-    id: 10,
+    id: 11,
     name: 'Page Headphones',
-    image: '/images/Headphones.png',
+    image: '/images/Projects/Headphones.png',
     description:
       'Headphones themed lading page where I learned a little more about reveal.js',
     tags: ['REVEAL.JS', 'Sass', 'Javascript'],
@@ -106,9 +116,9 @@ export const Work = [
     github: 'https://github.com/kleberson154/Page-headphones'
   },
   {
-    id: 11,
+    id: 12,
     name: 'Tesla Clone',
-    image: '/images/tesla-clone.png',
+    image: '/images/Projects/tesla-clone.png',
     description: 'A responsive tesla website with training goals',
     tags: ['REVEAL.JS', 'REDUX', 'React'],
 
@@ -120,10 +130,18 @@ export const Work = [
 export const Certificate = [
   {
     id: 1,
-    image: '/images/CertConect.png'
+    image: '/images/Certs/CertConect.png'
   },
   {
     id: 2,
-    image: '/images/CertFunda.png'
+    image: '/images/Certs/CertFunda.png'
+  },
+  {
+    id: 3,
+    image: '/images/Certs/CertEsp.png'
+  },
+  {
+    id: 4,
+    image: '/images/Certs/CertJav.png'
   }
 ]

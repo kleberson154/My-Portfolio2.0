@@ -19,7 +19,7 @@ import { YinYang } from '../components/AllSvgs'
 //style
 const Box = styled.div`
   background-color: ${props => props.theme.body};
-  height: 600vh;
+  height: 700vh;
   position: relative;
   display: flex;
   align-items: center;

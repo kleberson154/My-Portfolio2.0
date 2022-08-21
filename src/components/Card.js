@@ -6,7 +6,7 @@ import { BsGithub } from 'react-icons/bs'
 
 const Box = styled(motion.li)`
   width: 24rem;
-  height: 53vh;
+  height: 56vh;
   background-color: ${props => props.theme.text};
   color: ${props => props.theme.body};
   padding: 0 1.5rem 2rem;
