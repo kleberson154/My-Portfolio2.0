@@ -69,8 +69,8 @@ export const Work = [
       'Landing page made with react and typescript components, with Atomic Design folder structure',
     tags: ['React', 'TypeScript', 'Atomic Design'],
 
-    demo: 'https://cryptocurrency-lyart.vercel.app/',
-    github: 'https://github.com/kleberson154/Cryptocurrency'
+    demo: 'https://landing-kreed.vercel.app',
+    github: 'https://github.com/kleberson154/landing-kreed'
   },
   {
     id: 8,
