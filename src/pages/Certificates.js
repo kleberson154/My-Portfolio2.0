@@ -19,20 +19,20 @@ import { YinYang } from '../components/AllSvgs'
 //style
 const Box = styled.div`
   background-color: ${props => props.theme.body};
-  height: 550vh;
+  height: auto;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   user-select: none;
 `
 
 const Main = styled(motion.div)`
-  position: fixed;
+  position: absolute;
   top: 4rem;
   display: flex;
   flex-direction: column;
+  padding-bottom: 5rem;
   @media (max-width: 1348px) {
     top: 6rem;
     left: 8rem;
