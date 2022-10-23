@@ -17,7 +17,7 @@ import SoundBar from '../components/SoundBar'
 const Box = styled.div`
   background-color: ${props => props.theme.body};
   width: 92vw;
-  height: 100vh;
+  height: auto;
   position: relative;
   display: flex;
   justify-content: space-evenly;
@@ -35,14 +35,15 @@ const Tab = styled(motion.div)`
   gap: 3rem;
   position: relative;
   left: -1rem;
+  top: 140px;
 
-  @media (max-width: 900px) {
+  @media (max-width: 875px) {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     position: absolute;
-    top: 9rem;
     left: 23%;
+    padding-bottom: 2rem;
   }
 `
 
@@ -52,7 +53,7 @@ const Main = styled.div`
   background-color: ${props => props.theme.body};
   padding: 0 2rem;
   width: 30vw;
-  height: 60vh;
+  height: auto;
   line-height: 1.5;
   cursor: pointer;
 
@@ -119,15 +120,15 @@ const Description = styled.div`
   p {
     margin-left: 2rem;
   }
-  @media (max-width: 500px) {
-    font-size: 16px;
+  @media (max-width: 1050px) {
+    font-size: calc(0.5em + 1vw);
     padding: 0;
   }
 `
 const Liskill = styled.li`
-  font-size: 20px;
-  @media (max-width: 500px) {
-    font-size: 17px;
+  font-size: calc(0.2em + 1vw);
+  @media (max-width: 1050px) {
+    font-size: calc(0.5em + 1vw);
   }
 `
 
@@ -170,16 +171,16 @@ const MySkillsPage = () => {
               </Description>
               <Description>
                 <strong>I LIKE TO DESIGN</strong>
-                <ul>
-                  <li>Web Design</li>
-                  <li>UI/UX Design</li>
-                </ul>
+                <Ulskill>
+                  <Liskill>Web Design</Liskill>
+                  <Liskill>UI/UX Design</Liskill>
+                </Ulskill>
               </Description>
               <Description>
                 <strong>Tools</strong>
-                <ul>
-                  <li>Figma</li>
-                </ul>
+                <Ulskill>
+                  <Liskill>Figma</Liskill>
+                </Ulskill>
               </Description>
             </Main>
             <Main>
