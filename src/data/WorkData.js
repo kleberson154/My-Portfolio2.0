@@ -143,5 +143,13 @@ export const Certificate = [
   {
     id: 4,
     image: '/images/Certs/CertJav.png'
+  },
+  {
+    id: 5,
+    image: '/images/Certs/CertHTML.png'
+  },
+  {
+    id: 6,
+    image: '/images/Certs/CertCSS.png'
   }
 ]

@@ -195,15 +195,15 @@ const MySkillsPage = () => {
                 <Ulskill>
                   <Liskill>
                     Html, Css, Js, TypeScript, React, NextJs, ChakraUI,
-                    Tailwind, Styled-Components, Firebase, NodeJs, MySQL.
+                    Styled-Components, Bootstrap, Sass, NodeJs, MySQL.
                   </Liskill>
                 </Ulskill>
               </Description>
               <Description>
                 <strong>Tools</strong>
-                <ul>
-                  <li>VScode, Github, Codepen etc.</li>
-                </ul>
+                <Ulskill>
+                  <Liskill>VScode, Github, Codepen etc.</Liskill>
+                </Ulskill>
               </Description>
             </Main>
           </Tab>
