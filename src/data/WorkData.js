@@ -130,30 +130,34 @@ export const Work = [
 export const Certificate = [
   {
     id: 1,
-    image: '/images/Certs/CertConect.png'
-  },
-  {
-    id: 2,
-    image: '/images/Certs/CertFunda.png'
-  },
-  {
-    id: 3,
-    image: '/images/Certs/CertEsp.png'
-  },
-  {
-    id: 4,
-    image: '/images/Certs/CertJav.png'
-  },
-  {
-    id: 5,
     image: '/images/Certs/CertHTML.png'
   },
   {
-    id: 6,
+    id: 2,
     image: '/images/Certs/CertCSS.png'
   },
   {
-    id: 7,
+    id: 3,
     image: '/images/Certs/CertJavasOne.png'
+  },
+  {
+    id: 4,
+    image: '/images/Certs/CertJavDOM.png'
+  },
+  {
+    id: 5,
+    image: '/images/Certs/CertConect.png'
+  },
+  {
+    id: 6,
+    image: '/images/Certs/CertFunda.png'
+  },
+  {
+    id: 7,
+    image: '/images/Certs/CertEsp.png'
+  },
+  {
+    id: 8,
+    image: '/images/Certs/CertJav.png'
   }
 ]

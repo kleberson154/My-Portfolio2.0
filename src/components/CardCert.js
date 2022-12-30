@@ -13,7 +13,7 @@ const Box = styled(motion.li)`
 `
 
 const Image = styled.img`
-  width: 100%;
+  width: 80%;
   border-radius: 15px;
 `
 
