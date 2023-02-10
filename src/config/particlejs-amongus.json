@@ -116,7 +116,7 @@
         "right": "out",
         "top": "out"
       },
-      "speed": 5
+      "speed": 1.5
     },
     "number": {
       "value": 200
@@ -140,7 +140,7 @@
     },
     "rate": {
       "quantity": 1,
-      "delay": 7
+      "delay": 12
     },
     "shape": "square",
     "startCount": 0,
@@ -164,7 +164,7 @@
         "value": 40
       },
       "move": {
-        "speed": 10,
+        "speed": 5,
         "outModes": {
           "default": "none",
           "right": "destroy"
@@ -181,7 +181,7 @@
         },
         "animation": {
           "enable": true,
-          "speed": 10,
+          "speed": 5,
           "sync": true
         }
       }
