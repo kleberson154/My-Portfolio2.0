@@ -11,7 +11,6 @@ import SocialIcons from '../components/SocialIcons'
 import PowerButton from '../components/PowerButton'
 import SpaceParticle from '../components/SpaceParticle'
 import { keyframes } from 'styled-components'
-import SoundBar from '../components/SoundBar'
 
 //style
 const Box = styled.div`
@@ -80,7 +79,7 @@ const AboutPage = () => {
       <ThemeProvider theme={DarkTheme}>
         <Box>
           <LogoComponent theme="dark" />
-          <SoundBar />
+
           <SocialIcons theme="dark" />
           <PowerButton alt="Go to HomePage" />
           <SpaceParticle />

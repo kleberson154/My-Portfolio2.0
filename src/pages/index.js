@@ -16,7 +16,7 @@ import Intro from '../components/Intro'
 
 //Framer-motion
 import { motion } from 'framer-motion'
-import SoundBar from '../components/SoundBar'
+
 import Link from 'next/link'
 
 const MainContainer = styled.div`
@@ -156,7 +156,6 @@ export default function Home() {
           <Container>
             <PowerButton alt="Go to HomePage" />
             <Logo />
-            <SoundBar />
             <SocialIcons />
 
             <Center

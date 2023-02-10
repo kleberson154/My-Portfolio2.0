@@ -138,26 +138,30 @@ export const Certificate = [
   },
   {
     id: 3,
-    image: '/images/Certs/CertJavasOne.png'
+    image: '/images/Certs/CertCssModerno.png'
   },
   {
     id: 4,
-    image: '/images/Certs/CertJavDOM.png'
+    image: '/images/Certs/CertJavI.png'
   },
   {
     id: 5,
-    image: '/images/Certs/CertConect.png'
+    image: '/images/Certs/CertJavII.png'
   },
   {
     id: 6,
-    image: '/images/Certs/CertFunda.png'
+    image: '/images/Certs/CertJavIII.png'
   },
   {
     id: 7,
-    image: '/images/Certs/CertEsp.png'
+    image: '/images/Certs/CertFunda.png'
   },
   {
     id: 8,
+    image: '/images/Certs/CertEsp.png'
+  },
+  {
+    id: 9,
     image: '/images/Certs/CertJav.png'
   }
 ]

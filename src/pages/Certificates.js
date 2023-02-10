@@ -10,7 +10,6 @@ import LogoComponent from '../components/LogoComponent'
 import SocialIcons from '../components/SocialIcons'
 import PowerButton from '../components/PowerButton'
 import ParticleComponent from '../components/ParticleComponent'
-import SoundBar from '../components/SoundBar'
 
 import { Certificate } from '../data/WorkData'
 import CardCert from '../components/CardCert'
@@ -94,7 +93,7 @@ const Certificates = () => {
       <ThemeProvider theme={lightTheme}>
         <Box>
           <LogoComponent theme="light" />
-          <SoundBar />
+
           <SocialIcons theme="light" />
           <PowerButton alt="Go to HomePage" />
           <ParticleComponent />

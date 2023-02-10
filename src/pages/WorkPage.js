@@ -10,7 +10,6 @@ import LogoComponent from '../components/LogoComponent'
 import SocialIcons from '../components/SocialIcons'
 import PowerButton from '../components/PowerButton'
 import AmongusParticle from '../components/AmongusParticle'
-import SoundBar from '../components/SoundBar'
 
 import { Work } from '../data/WorkData'
 import Card from '../components/Card'
@@ -89,7 +88,7 @@ const WorkPage = () => {
       <ThemeProvider theme={DarkTheme}>
         <Box>
           <LogoComponent theme="dark" />
-          <SoundBar />
+
           <SocialIcons theme="dark" />
           <PowerButton alt="Go to HomePage" />
           <AmongusParticle />
