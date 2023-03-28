@@ -102,14 +102,14 @@ const AboutPage = () => {
           >
             I&apos;m a Full-Stack Developer located in Brazil. I love creating
             simple and beautiful websites with great user experience and
-            optimized.
+            optimization.
             <br /> <br />
-            I&apos;m interested in all the full-stack stuff, like trying new
-            things and building projects big or small. I&apos;m a freelancer for
+            I&apos;m interested in all Full-Stack skills, like trying new things
+            and building big and innovative projects. I&apos;m a freelancer for
             fun.
             <br /> <br />
-            My focus as a developer is to improve my career and to specialize in
-            javascript and improve it every day
+            My focus as a programmer is to improve my career and specialize in
+            javascript and improve every day.
           </Main>
         </Box>
       </ThemeProvider>
