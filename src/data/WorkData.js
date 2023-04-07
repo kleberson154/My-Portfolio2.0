@@ -154,30 +154,34 @@ export const Certificate = [
   },
   {
     id: 7,
-    image: '/images/Certs/FormaHTML.png'
+    image: '/images/Certs/CertJavIV.png'
   },
   {
     id: 8,
-    image: '/images/Certs/FormaCss.png'
+    image: '/images/Certs/FormaHTML.png'
   },
   {
     id: 9,
-    image: '/images/Certs/FormaJav.png'
+    image: '/images/Certs/FormaCss.png'
   },
   {
     id: 10,
-    image: '/images/Certs/CertConect.png'
+    image: '/images/Certs/FormaJav.png'
   },
   {
     id: 11,
-    image: '/images/Certs/CertFunda.png'
+    image: '/images/Certs/CertConect.png'
   },
   {
     id: 12,
-    image: '/images/Certs/CertEsp.png'
+    image: '/images/Certs/CertFunda.png'
   },
   {
     id: 13,
+    image: '/images/Certs/CertEsp.png'
+  },
+  {
+    id: 14,
     image: '/images/Certs/CertJav.png'
   }
 ]

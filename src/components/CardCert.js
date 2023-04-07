@@ -13,8 +13,11 @@ const Box = styled(motion.li)`
 `
 
 const Image = styled.img`
-  width: 60%;
+  width: 50%;
   border-radius: 15px;
+  @media (max-width: 1348px) {
+    width: 60%;
+  }
 `
 
 const Item = {
