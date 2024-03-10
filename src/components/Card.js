@@ -138,7 +138,7 @@ const Card = props => {
       <Footer>
         <Link href={{ pathname: `${demo}` }} passHref={true} target="_blank">
           <a target="_blank" rel="noreferrer">
-            <Button>visit</Button>
+            <Button>visitar</Button>
           </a>
         </Link>
         <Link href={{ pathname: `${github}` }} passHref={true} target="_blank">

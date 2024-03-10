@@ -1,129 +1,119 @@
 export const Work = [
   {
     id: 1,
-    name: '404-Not Found',
-    image: '/images/Projects/404.png',
-    description: 'custom 404 error lading page with html and css',
-    tags: ['Html', 'Css'],
-
-    demo: 'https://page-404-tau.vercel.app/',
-    github: 'https://github.com/kleberson154/page-404'
+    name: 'CardMain',
+    image: '/images/Projects/CardMain.png',
+    description:
+      'Projeto React, Bootstrap, Sass, ESlint para colocar em prática.',
+    tags: ['REACT', 'BOOTSTRAP', 'SASS'],
+    demo: 'https://card-main.vercel.app/',
+    github: 'https://github.com/kleberson154/CardMain'
   },
   {
     id: 2,
-    name: 'Snake Game',
-    image: '/images/Projects/snake-game.png',
-    description: 'classic snake game made with pure javascript',
-    tags: ['Javascript', 'Html', 'Css'],
-    demo: 'http://snake-game-lime.vercel.app/',
-    github: 'https://github.com/kleberson154/SnakeGame'
+    name: 'Tech a Sketch',
+    image: '/images/Projects/TAS.png',
+    description:
+      'Exercitando com um desafio difícil. Colocando em prática mais manipulação do DOM com JavaScript.',
+    tags: ['HTML', 'CSS', 'JAVASCRIPT'],
+    demo: 'https://kleberson154.github.io/odin-tech-a-sketch/',
+    github: 'https://github.com/kleberson154/odin-tech-a-sketch'
   },
   {
     id: 3,
-    name: 'Login and Register',
-    image: '/images/Projects/login-register.png',
-    description:
-      'login page with route to register made from scratch with react',
-    tags: ['React', 'Css', 'Html'],
-
-    demo: 'https://login-and-register-jade.vercel.app/',
-    github: 'https://github.com/kleberson154/login-and-register'
+    name: 'Calculadora',
+    image: '/images/Projects/Calculator.png',
+    description: 'Desafio de prática para criar uma calculadora.',
+    tags: ['HTML', 'CSS', 'JAVASCRIPT'],
+    demo: 'https://kleberson154.github.io/odin-calculator/',
+    github: 'https://github.com/kleberson154/odin-calculator'
   },
   {
     id: 4,
-    name: 'Instagram-Login',
-    image: '/images/Projects/instagram.png',
-    description:
-      'Clone of instagram web login lading page with only html and css',
-    tags: ['Html', 'Css'],
-
-    demo: 'https://instagram-one-neon.vercel.app/',
-    github: 'https://github.com/kleberson154/Instagram'
+    name: 'Pedra,Papel e Tesoura',
+    image: '/images/Projects/PPT.png',
+    description: 'Desafio de prática recriando o jogo pedra, papel e tesoura.',
+    tags: ['HTML', 'CSS', 'JAVASCRIPT'],
+    demo: 'https://kleberson154.github.io/odin-Rock-Paper-Scissors/',
+    github: 'https://github.com/kleberson154/odin-Rock-Paper-Scissors'
   },
   {
     id: 5,
-    name: 'Todo-List',
-    image: '/images/Projects/Todo.png',
-    description: 'classic todo-list made with react, html and css',
-    tags: ['React', 'Html', 'Css'],
-
-    demo: 'https://todo-list-dun-sigma.vercel.app/',
-    github: 'https://github.com/kleberson154/Todo-List'
+    name: 'Odin Template',
+    image: '/images/Projects/odin-template.png',
+    description:
+      'Projeto de landing page da Odin Projects com tema livre e apenas o layout disponibilizado.',
+    tags: ['HTML', 'CSS'],
+    demo: 'https://kleberson154.github.io/odin-template/',
+    github: 'https://github.com/kleberson154/odin-template'
   },
   {
     id: 6,
-    name: 'Cryptocurrency site',
-    image: '/images/Projects/Crypto.png',
+    name: 'FAQ Accordion',
+    image: '/images/Projects/FAQaccordion.png',
     description:
-      'Cryptocurrency site made in react with api consumption with axios',
-    tags: ['React', 'API', 'Axios'],
-
-    demo: 'https://cryptocurrency-lyart.vercel.app/',
-    github: 'https://github.com/kleberson154/Cryptocurrency'
+      'Desafio FAQ, com o padrão que se vê em outros sites Front-End.Desafio FAQ, com o padrão que se vê em outros sites Front-End.',
+    tags: ['REACT', 'BOOTSTRAP', 'SASS'],
+    demo: 'https://faq-accordion-ivory.vercel.app/',
+    github: 'https://github.com/kleberson154/FAQaccordion'
   },
   {
     id: 7,
-    name: 'Landing Kreed',
-    image: '/images/Projects/landingKreed.png',
+    name: 'Qr Code',
+    image: '/images/Projects/QRCode.png',
     description:
-      'Landing page made with react and typescript components, with Atomic Design folder structure',
-    tags: ['React', 'TypeScript', 'Atomic Design'],
-
-    demo: 'https://landing-kreed.vercel.app',
-    github: 'https://github.com/kleberson154/landing-kreed'
+      'Este é um desafio fácil para o mentor de front-end HTML e CSS.',
+    tags: ['HTML', 'CSS', 'JAVASCRIPT'],
+    demo: 'https://kleberson154.github.io/QrCodeComponent/',
+    github: 'https://github.com/kleberson154/QrCodeComponent'
   },
   {
     id: 8,
-    name: 'old portfolio',
-    image: '/images/Projects/oldPortfolio.png',
-    description: 'my old portfolio in react with ui/ux methods',
-    tags: ['React', 'UI/UX'],
-
-    demo: 'https://portkleber.vercel.app/',
-    github: 'https://github.com/kleberson154/portfolio-updated'
+    name: 'Product Preview',
+    image: '/images/Projects/ProductCard.png',
+    description: 'Projeto HTML e CSS para prática de responsividade.',
+    tags: ['HTML', 'CSS'],
+    demo: 'https://kleberson154.github.io/ProductCardComponent/',
+    github: 'https://github.com/kleberson154/ProductCardComponent'
   },
   {
     id: 9,
-    name: 'Modern UI/UX',
-    image: '/images/Projects/modern-ui-ux.png',
+    name: 'Result Summary',
+    image: '/images/Projects/ResultSumary.png',
     description:
-      'nft landing page made in react with the design made in ui/ux methods',
-    tags: ['React', 'UI/UX'],
-
-    demo: 'http://modern-ui-ux-lemon.vercel.app/',
-    github: 'https://github.com/kleberson154/Modern-ui-ux'
+      'Projeto React, Vite e Tailwind. Feito com customização de cores e responsividade do tailwind, com alto desempenho feito em Vite.',
+    tags: ['REACT', 'TAILWINDCSS', 'VITE'],
+    demo: 'https://result-sumary.vercel.app/',
+    github: 'https://github.com/kleberson154/result-sumary'
   },
   {
     id: 10,
-    name: 'nftlading',
-    image: '/images/Projects/nft.png',
+    name: 'Cryptocurrency',
+    image: '/images/Projects/currency.png',
+    description: 'Aprendendo a usar API RESTful com axios e fetch.',
+    tags: ['REACT', 'AXIOS', 'JAVASCRIPT'],
+    demo: 'http://cryptocurrency-lyart.vercel.app/',
+    github: 'https://github.com/kleberson154/Cryptocurrency'
+  },
+  {
+    id: 11,
+    name: 'NftLanding',
+    image: '/images/Projects/nftLanding.png',
     description:
-      'nft landing page made in react with more modern animations and light and dark mode',
-    tags: ['React', 'Sass', 'Javascript'],
-
+      'Um trabalho que fiz para um cliente que queria começar no mercado de venda de NFT em 2020.',
+    tags: ['REACT', 'SASS', 'SCROLLREVEAL', 'REACT-ICON'],
     demo: 'http://nftlading.vercel.app/',
     github: 'https://github.com/kleberson154/nftlading'
   },
   {
-    id: 11,
-    name: 'Page Headphones',
-    image: '/images/Projects/Headphones.png',
-    description:
-      'Headphones themed lading page where I learned a little more about reveal.js',
-    tags: ['REVEAL.JS', 'Sass', 'Javascript'],
-
-    demo: 'https://page-headphones.vercel.app/',
-    github: 'https://github.com/kleberson154/Page-headphones'
-  },
-  {
     id: 12,
-    name: 'Tesla Clone',
-    image: '/images/Projects/tesla-clone.png',
-    description: 'A responsive tesla website with training goals',
-    tags: ['REVEAL.JS', 'REDUX', 'React'],
-
-    demo: 'https://clone-tesla-gilt.vercel.app/',
-    github: 'https://github.com/kleberson154/Clone-tesla'
+    name: 'CRUD NODE',
+    image: '/images/Projects/Crud.png',
+    description:
+      'Projeto Crud, compreendendo os conceitos básicos de NodeJs e rotas usando o framework Fastify com um banco de dados PostgreSQL.',
+    tags: ['NODEJS', 'FASTIFY', 'RENDER'],
+    demo: 'https://node-do-zero-1doj.onrender.com/videos',
+    github: 'https://github.com/kleberson154/node-do-zero'
   }
 ]
 
