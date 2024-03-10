@@ -101,7 +101,7 @@ export const Work = [
     image: '/images/Projects/nftLanding.png',
     description:
       'Um trabalho que fiz para um cliente que queria começar no mercado de venda de NFT em 2020.',
-    tags: ['REACT', 'SASS', 'SCROLLREVEAL', 'REACT-ICON'],
+    tags: ['REACT', 'SASS', 'SCROLLREVEAL'],
     demo: 'http://nftlading.vercel.app/',
     github: 'https://github.com/kleberson154/nftlading'
   },

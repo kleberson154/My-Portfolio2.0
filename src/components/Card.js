@@ -9,12 +9,12 @@ const Box = styled(motion.li)`
   height: 56vh;
   background-color: ${props => props.theme.text};
   color: ${props => props.theme.body};
-  padding: 0 1.5rem 2rem;
+  padding: 0.5rem 1.5rem 2rem;
   margin-right: 8rem;
-  border-radius: 50px;
+  border-radius: 35px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border: 2px solid ${props => props.theme.text};
   transition: background-color ease 0.5s;
@@ -32,7 +32,7 @@ const Box = styled(motion.li)`
       color: ${props => props.theme.text};
       border-color: ${props => props.theme.text};
     }
-    button {
+    a {
       cursor: pointer;
       color: ${props => props.theme.body};
       background-color: ${props => props.theme.text};
@@ -82,32 +82,34 @@ const Tag = styled.span`
 `
 
 const Footer = styled.footer`
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 1.5rem;
-  gap: 1rem;
 `
 
-const Button = styled.button`
+const Button = styled.a`
+  width: 45%;
   background-color: ${props => props.theme.body};
   color: ${props => props.theme.text};
-  text-decoration: none;
   padding: 0.5rem calc(2rem + 1vw);
   border-radius: 25px 0 0 25px;
-  font-size: calc(1em + 0.5vw);
-  border: 0;
+  font-size: calc(1em + 0.4vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 
-const Git = styled.button`
+const Git = styled.a`
+  width: 45%;
   background-color: ${props => props.theme.body};
   color: ${props => props.theme.text};
-  text-decoration: none;
   padding: 0.64rem calc(2rem + 1.4vw);
   border-radius: 0 25px 25px 0;
   font-size: calc(1em + 0.5vw);
-  border: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 `
 const Item = {
   hidden: {
@@ -136,18 +138,13 @@ const Card = props => {
         })}
       </Tags>
       <Footer>
-        <Link href={{ pathname: `${demo}` }} passHref={true} target="_blank">
-          <a target="_blank" rel="noreferrer">
-            <Button>visitar</Button>
-          </a>
-        </Link>
-        <Link href={{ pathname: `${github}` }} passHref={true} target="_blank">
-          <a target="_blank" rel="noreferrer">
-            <Git>
-              <BsGithub width={30} height={30} />
-            </Git>
-          </a>
-        </Link>
+        <Button href={demo} target="_blank">
+          visitar
+        </Button>
+
+        <Git href={github} target="_blank">
+          <BsGithub width={30} height={30} />
+        </Git>
       </Footer>
     </Box>
   )
