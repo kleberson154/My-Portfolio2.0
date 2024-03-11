@@ -1,4 +1,3 @@
-import React, { useEffect, useRef } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import { motion } from 'framer-motion'
 
@@ -13,15 +12,6 @@ import AmongusParticle from '../components/AmongusParticle'
 
 import { Work } from '../data/WorkData'
 import Card from '../components/Card'
-import { YinYang } from '../components/AllSvgs'
-
-//style
-const Box = styled.div`
-  background-color: ${props => props.theme.body};
-  display: flex;
-  align-items: center;
-  user-select: none;
-`
 
 const Main = styled(motion.ul)`
   position: absolute;
@@ -75,16 +65,11 @@ const WorkPage = () => {
         <SocialIcons theme="dark" />
         <PowerButton alt="Go to HomePage" />
         <AmongusParticle />
-        {/* <Box> */}
         <Main variants={container} initial="hidden" animate="show">
           {Work.reverse().map(d => (
             <Card key={d.id} data={d} />
           ))}
         </Main>
-        {/* <Rotate ref={yinyang}>
-            <YinYang width={80} height={80} fill={DarkTheme.text} />
-          </Rotate> */}
-        {/* </Box> */}
       </ThemeProvider>
     </motion.div>
   )
