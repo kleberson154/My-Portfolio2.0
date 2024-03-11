@@ -120,58 +120,82 @@ export const Work = [
 export const Certificate = [
   {
     id: 1,
-    image: '/images/Certs/CertHTML.png'
-  },
-  {
-    id: 2,
-    image: '/images/Certs/CertCSS.png'
-  },
-  {
-    id: 3,
-    image: '/images/Certs/CertCssModerno.png'
-  },
-  {
-    id: 4,
-    image: '/images/Certs/CertJavI.png'
-  },
-  {
-    id: 5,
-    image: '/images/Certs/CertJavII.png'
-  },
-  {
-    id: 6,
-    image: '/images/Certs/CertJavIII.png'
-  },
-  {
-    id: 7,
-    image: '/images/Certs/CertJavIV.png'
-  },
-  {
-    id: 8,
     image: '/images/Certs/FormaHTML.png'
   },
   {
-    id: 9,
+    id: 2,
     image: '/images/Certs/FormaCss.png'
   },
   {
-    id: 10,
+    id: 3,
     image: '/images/Certs/FormaJav.png'
   },
   {
-    id: 11,
+    id: 4,
     image: '/images/Certs/CertConect.png'
   },
   {
-    id: 12,
+    id: 5,
     image: '/images/Certs/CertFunda.png'
   },
   {
-    id: 13,
+    id: 6,
     image: '/images/Certs/CertEsp.png'
   },
   {
-    id: 14,
+    id: 7,
     image: '/images/Certs/CertJav.png'
+  },
+  {
+    id: 8,
+    image: '/images/Certs/One1.png'
+  },
+  {
+    id: 9,
+    image: '/images/Certs/One2.png'
+  },
+  {
+    id: 10,
+    image: '/images/Certs/One3.png'
+  },
+  {
+    id: 11,
+    image: '/images/Certs/One4.png'
+  },
+  {
+    id: 12,
+    image: '/images/Certs/One5.png'
+  },
+  {
+    id: 13,
+    image: '/images/Certs/One6.png'
+  },
+  {
+    id: 14,
+    image: '/images/Certs/One7.png'
+  },
+  {
+    id: 13,
+    image: '/images/Certs/One8.png'
+  },
+  {
+    id: 13,
+    image: '/images/Certs/One9.png'
+  },
+  {
+    id: 13,
+    image: '/images/Certs/One10.png'
+  },
+  {
+    id: 13,
+    image: '/images/Certs/Desc1.png'
+  },
+  {
+    id: 13,
+    image: '/images/Certs/Desc2.png'
+  },
+  {
+    id: 13,
+    image: '/images/Certs/Desc3.png'
   }
 ]
