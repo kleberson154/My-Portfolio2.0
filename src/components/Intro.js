@@ -94,12 +94,12 @@ const Intro = () => {
     <Box
       initial={{ height: 0 }}
       animate={{ height: '50vh' }}
-      transition={{ type: 'spring', duration: 2, delay: 0.3 }}
+      transition={{ type: 'spring', duration: 0.8, delay: 0.3 }}
     >
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
       >
         <SubBoxOne>
           <Text>
