@@ -1,4 +1,3 @@
-import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import { motion } from 'framer-motion'
 
@@ -13,13 +12,6 @@ import SpaceParticle from '../components/SpaceParticle'
 import { keyframes } from 'styled-components'
 
 //style
-const Box = styled.div`
-  background-color: ${props => props.theme.body};
-  width: 92vw;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-`
 
 const float = keyframes`
 0% { transform: translateY(-10px)}
@@ -46,7 +38,7 @@ const Main = styled(motion.div)`
   color: ${props => props.theme.text};
   padding: 2rem;
   width: 50vw;
-  height: 60vh;
+  height: 70vh;
   z-index: 3;
   line-height: 1.5;
   user-select: none;
@@ -63,12 +55,17 @@ const Main = styled(motion.div)`
 
   font-family: 'Ubuntu Mono', monospace;
   font-style: italic;
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     width: 70vw;
-    height: 60vh;
+    height: 50vh;
     position: relative;
     top: 14rem;
     left: 5rem;
+    padding: 1rem;
+  }
+
+  @media (max-width: 326px) {
+    height: 60vh;
   }
 `
 
@@ -77,41 +74,38 @@ const AboutPage = () => {
   return (
     <motion.div exit={{ opacity: 0 }}>
       <ThemeProvider theme={DarkTheme}>
-        <Box>
-          <LogoComponent theme="dark" />
+        <LogoComponent theme="dark" />
 
-          <SocialIcons theme="dark" />
-          <PowerButton alt="Go to HomePage" />
-          <SpaceParticle />
+        <SocialIcons theme="dark" />
+        <PowerButton alt="Go to HomePage" />
+        <SpaceParticle />
 
-          <Spaceman>
-            <img src="/images/spaceman.png" alt="spaceman" />
-          </Spaceman>
-
-          <Main
-            initial={{
-              opacity: 0,
-              y: 200,
-              transition: { type: 'spring', duration: 1.5, delay: 1 }
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              transition: { type: 'spring', duration: 1.5, delay: 1 }
-            }}
-          >
-            I&apos;m a Full-Stack Developer located in Brazil. I love creating
-            simple and beautiful websites with great user experience and
-            optimization.
-            <br /> <br />
-            I&apos;m interested in all Full-Stack skills, like trying new things
-            and building big and innovative projects. I&apos;m a freelancer for
-            fun.
-            <br /> <br />
-            My focus as a programmer is to improve my career and specialize in
-            javascript and improve every day.
-          </Main>
-        </Box>
+        <Spaceman>
+          <img src="/images/spaceman.png" alt="spaceman" />
+        </Spaceman>
+        <Main
+          initial={{
+            opacity: 0,
+            y: 200,
+            transition: { type: 'spring', duration: 1.5, delay: 1 }
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { type: 'spring', duration: 1.5, delay: 1 }
+          }}
+        >
+          Olá, Eu sou Kleberson!
+          <br /> <br />
+          Sou um desenvolvedor full-stack autodidata que mora em Uberlândia,
+          Minas Gerais. Posso desenvolver sites responsivos do zero e
+          transformá-los em experiências modernas e fáceis de usar na Web com
+          bancos de dados organizados e de alta performance.
+          <br /> <br />
+          Criar sites do zero com meu conhecimento em Programação tem sido minha
+          paixão há mais de um ano. Sempre me esforço para aprender sobre as
+          mais novas tecnologias e estruturas da programação.
+        </Main>
       </ThemeProvider>
     </motion.div>
   )
