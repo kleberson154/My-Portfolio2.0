@@ -5,12 +5,10 @@ import Link from 'next/link'
 import { BsGithub } from 'react-icons/bs'
 
 const Box = styled(motion.li)`
-  width: 24rem;
-  height: 56vh;
+  width: 22rem;
   background-color: ${props => props.theme.text};
   color: ${props => props.theme.body};
   padding: 0.5rem 1.5rem 2rem;
-  margin-right: 8rem;
   border-radius: 35px;
   display: flex;
   flex-direction: column;
@@ -43,8 +41,12 @@ const Box = styled(motion.li)`
   }
   @media (max-width: 500px) {
     width: 20rem;
-    height: 50vh;
     font-size: 18px;
+  }
+
+  @media (max-width: 400px) {
+    width: 18rem;
+    font-size: 16px;
   }
 `
 
@@ -71,9 +73,13 @@ const Tags = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 21rem;
+  width: 19rem;
   @media (max-width: 500px) {
     width: 18rem;
+  }
+
+  @media (max-width: 400px) {
+    width: 16rem;
   }
 `
 const Tag = styled.span`
