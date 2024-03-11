@@ -27,22 +27,26 @@ const Box = styled.div`
 `
 
 const Tab = styled(motion.div)`
+  width: 100%;
   z-index: 1;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0 5.5rem 0 5.5rem;
   gap: 3rem;
-  position: relative;
-  left: -1rem;
+  position: absolute;
+
   top: 140px;
 
   @media (max-width: 875px) {
-    display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
-    position: absolute;
-    left: 23%;
     padding-bottom: 2rem;
+  }
+
+  @media (max-width: 500px) {
+    padding: 0 1rem 0 5.5rem;
   }
 `
 
@@ -51,7 +55,7 @@ const Main = styled.div`
   color: ${props => props.theme.text};
   background-color: ${props => props.theme.body};
   padding: 0 2rem;
-  width: 30vw;
+  width: 100%;
   height: auto;
   line-height: 1.5;
   cursor: pointer;
@@ -85,7 +89,6 @@ const Main = styled.div`
     }
   }
   @media (max-width: 900px) {
-    width: 18rem;
     padding: 0 1rem;
     justify-content: space-around;
   }
@@ -141,73 +144,76 @@ const MySkillsPage = () => {
   return (
     <motion.div exit={{ opacity: 0 }}>
       <ThemeProvider theme={lightTheme}>
-        <Box>
-          <LogoComponent theme="light" />
+        {/* <Box> */}
+        <LogoComponent theme="light" />
 
-          <SocialIcons theme="light" />
-          <PowerButton alt="Go to HomePage" />
-          <ParticleComponent />
+        <SocialIcons theme="light" />
+        <PowerButton alt="Go to HomePage" />
+        <ParticleComponent />
 
-          <Tab
-            initial={{
-              opacity: 0,
-              y: 200,
-              transition: { type: 'spring', duration: 1.5, delay: 1 }
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              transition: { type: 'spring', duration: 1.5, delay: 1 }
-            }}
-          >
-            <Main>
-              <Title>
-                <Design width={40} height={40} /> Designer
-              </Title>
-              <Description>
-                I love to create design which speaks, Keep it clean, minimal and
-                simple.
-              </Description>
-              <Description>
-                <strong>I LIKE TO DESIGN</strong>
-                <Ulskill>
-                  <Liskill>Web Design</Liskill>
-                  <Liskill>UI/UX Design</Liskill>
-                </Ulskill>
-              </Description>
-              <Description>
-                <strong>Tools</strong>
-                <Ulskill>
-                  <Liskill>Figma</Liskill>
-                </Ulskill>
-              </Description>
-            </Main>
-            <Main>
-              <Title>
-                <Develope width={40} height={40} /> FullStack Developer
-              </Title>
-              <Description>
-                I am a specialized JavaScript developer with skills in the main
-                Front-End and Back-End frameworks
-              </Description>
-              <Description>
-                <strong>SKILLS</strong>
-                <Ulskill>
-                  <Liskill>
-                    Html, Css, Js, TypeScript, React, NextJs, ChakraUI,
-                    Styled-Components, Bootstrap, Sass, NodeJs, MySQL.
-                  </Liskill>
-                </Ulskill>
-              </Description>
-              <Description>
-                <strong>Tools</strong>
-                <Ulskill>
-                  <Liskill>VScode, Github, Codepen etc.</Liskill>
-                </Ulskill>
-              </Description>
-            </Main>
-          </Tab>
-        </Box>
+        <Tab
+          initial={{
+            opacity: 0,
+            y: 200,
+            transition: { type: 'spring', duration: 1.5, delay: 1 }
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { type: 'spring', duration: 1.5, delay: 1 }
+          }}
+        >
+          <Main>
+            <Title>
+              <Develope width={40} height={40} /> FullStack Developer
+            </Title>
+            <Description>
+              Sou um desenvolvedor especializado em JavaScript com habilidades
+              nos principais Frameworks de front-end e back-end.
+            </Description>
+            <Description>
+              <strong>HABILIDADES</strong>
+              <Ulskill>
+                <Liskill>
+                  Html, Css, JavaScript, TypeScript, React, NextJs, Java,
+                  NodeJs, PostgreSQL, MongoDB, MySQL, ExpressJS, RESTful, JWT,
+                  Tailwild, Styled-Components, Bootstrap, Sass.
+                </Liskill>
+              </Ulskill>
+            </Description>
+            <Description>
+              <strong>FERRAMENTAS</strong>
+              <Ulskill>
+                <Liskill>VScode, Github, Codepen etc.</Liskill>
+              </Ulskill>
+            </Description>
+          </Main>
+          <Main>
+            <Title>
+              <Design width={40} height={40} /> Designer
+            </Title>
+            <Description>
+              Adoro criar um design que fala: "Mantenha-o limpo, minimalista e
+              simples.
+            </Description>
+            <Description>
+              <strong>I LIKE TO DESIGN</strong>
+              <Ulskill>
+                <Liskill>
+                  Web Design, Font-Awesome, UI/UX Design, React-Icons,
+                  Framer-Motion
+                </Liskill>
+              </Ulskill>
+            </Description>
+            <Description>
+              <strong>Tools</strong>
+              <Ulskill>
+                <Liskill>Figma</Liskill>
+              </Ulskill>
+            </Description>
+          </Main>
+        </Tab>
+        {/* </Box> */}
       </ThemeProvider>
     </motion.div>
   )
