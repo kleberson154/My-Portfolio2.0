@@ -8,10 +8,10 @@ import { lightTheme } from '../components/Themes'
 import LogoComponent from '../components/LogoComponent'
 import SocialIcons from '../components/SocialIcons'
 import PowerButton from '../components/PowerButton'
-import ParticleComponent from '../components/ParticleComponent'
 
 import { Certificate } from '../data/WorkData'
 import CardCert from '../components/CardCert'
+import SpaceParticle from '../components/SpaceParticle'
 
 const Main = styled(motion.div)`
   position: absolute;
@@ -58,14 +58,14 @@ const Certificates = () => {
   return (
     <motion.div exit={{ opacity: 0 }}>
       <ThemeProvider theme={lightTheme}>
-        <LogoComponent theme="light" />
+        <LogoComponent theme="dark" />
 
-        <SocialIcons theme="light" />
+        <SocialIcons theme="dark" />
         <PowerButton alt="Go to HomePage" />
-        <ParticleComponent />
+        <SpaceParticle />
 
         <Main variants={container} initial="hidden" animate="show">
-          {Certificate.map(d => (
+          {Certificate.reverse().map(d => (
             <CardCert key={d.id} data={d} />
           ))}
         </Main>
