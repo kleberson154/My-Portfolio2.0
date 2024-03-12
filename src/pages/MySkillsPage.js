@@ -197,7 +197,7 @@ const MySkillsPage = () => {
               simples.
             </Description>
             <Description>
-              <strong>I LIKE TO DESIGN</strong>
+              <strong>HABILIDADES</strong>
               <Ulskill>
                 <Liskill>
                   Web Design, Font-Awesome, UI/UX Design, React-Icons,
@@ -206,7 +206,7 @@ const MySkillsPage = () => {
               </Ulskill>
             </Description>
             <Description>
-              <strong>Tools</strong>
+              <strong>FERRAMENTAS</strong>
               <Ulskill>
                 <Liskill>Figma</Liskill>
               </Ulskill>
