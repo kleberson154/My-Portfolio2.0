@@ -141,10 +141,15 @@ export default function Home() {
         <title>kleberson A.</title>
         {/* fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <meta
           name="description"
           content="Portfolio created by kleberson Andrade - Developer Full-Stack"
+          lang="pt-br"
         ></meta>
         <link
           href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600&family=Pacifico&family=Source+Sans+Pro:wght@400;600;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap"
@@ -159,7 +164,7 @@ export default function Home() {
             <SocialIcons />
 
             <Center
-              click={click}
+              click={click ? click : undefined}
               initial={{ opacity: '0' }}
               animate={{ opacity: '1' }}
               transition={{ duration: 1, delay: 1 }}

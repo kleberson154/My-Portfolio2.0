@@ -40,7 +40,10 @@ const SocialIcons = props => {
           animate={{ scale: [0, 1, 1.3, 1] }}
           transition={{ type: 'spring', duration: 1, delay: 1 }}
         >
-          <Link href={'https://github.com/kleberson154'}>
+          <Link
+            href={'https://github.com/kleberson154'}
+            aria-label="Link para o meu github."
+          >
             <a target={'_blank'}>
               <BsGithub
                 size={30}
@@ -54,7 +57,10 @@ const SocialIcons = props => {
           animate={{ scale: [0, 1, 1.3, 1] }}
           transition={{ type: 'spring', duration: 1, delay: 1 }}
         >
-          <Link href={'https://www.instagram.com/kleberson.14/'}>
+          <Link
+            href={'https://www.instagram.com/kleberson.14/'}
+            aria-label="Link para o meu Instagram."
+          >
             <a target={'_blank'}>
               <BsInstagram
                 size={30}
@@ -68,7 +74,10 @@ const SocialIcons = props => {
           animate={{ scale: [0, 1, 1.3, 1] }}
           transition={{ type: 'spring', duration: 1, delay: 1 }}
         >
-          <Link href={'https://api.whatsapp.com/send?phone=5534991336956'}>
+          <Link
+            href={'https://api.whatsapp.com/send?phone=5534991336956'}
+            aria-label="Link para o meu numero de telefone no whatsapp."
+          >
             <a target={'_blank'}>
               <BsWhatsapp
                 size={30}
@@ -84,6 +93,7 @@ const SocialIcons = props => {
         >
           <Link
             href={'https://www.linkedin.com/in/kleberson-andrade-47187520a/'}
+            aria-label="Link para o meu linkedin."
           >
             <a target={'_blank'}>
               <BsLinkedin
