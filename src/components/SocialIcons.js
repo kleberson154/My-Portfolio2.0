@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 import React from 'react'
 import { BsGithub, BsWhatsapp, BsLinkedin, BsInstagram } from 'react-icons/bs'
 import styled from 'styled-components'
@@ -40,68 +39,68 @@ const SocialIcons = props => {
           animate={{ scale: [0, 1, 1.3, 1] }}
           transition={{ type: 'spring', duration: 1, delay: 1 }}
         >
-          <Link
+          <a
             href={'https://github.com/kleberson154'}
             aria-label="Link para o meu github."
+            tabindex="0"
+            target={'_blank'}
           >
-            <a target={'_blank'}>
-              <BsGithub
-                size={30}
-                fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
-              />
-            </a>
-          </Link>
+            <BsGithub
+              size={30}
+              fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
+            />
+          </a>
         </motion.div>
         <motion.div
           initial={{ transform: 'scale(0)' }}
           animate={{ scale: [0, 1, 1.3, 1] }}
           transition={{ type: 'spring', duration: 1, delay: 1 }}
         >
-          <Link
+          <a
             href={'https://www.instagram.com/kleberson.14/'}
             aria-label="Link para o meu Instagram."
+            tabindex="0"
+            target={'_blank'}
           >
-            <a target={'_blank'}>
-              <BsInstagram
-                size={30}
-                fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
-              />
-            </a>
-          </Link>
+            <BsInstagram
+              size={30}
+              fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
+            />
+          </a>
         </motion.div>
         <motion.div
           initial={{ transform: 'scale(0)' }}
           animate={{ scale: [0, 1, 1.3, 1] }}
           transition={{ type: 'spring', duration: 1, delay: 1 }}
         >
-          <Link
+          <a
             href={'https://api.whatsapp.com/send?phone=5534991336956'}
             aria-label="Link para o meu numero de telefone no whatsapp."
+            tabindex="0"
+            target={'_blank'}
           >
-            <a target={'_blank'}>
-              <BsWhatsapp
-                size={30}
-                fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
-              />
-            </a>
-          </Link>
+            <BsWhatsapp
+              size={30}
+              fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
+            />
+          </a>
         </motion.div>
         <motion.div
           initial={{ transform: 'scale(0)' }}
           animate={{ scale: [0, 1, 1.3, 1] }}
           transition={{ type: 'spring', duration: 1, delay: 1 }}
         >
-          <Link
+          <a
             href={'https://www.linkedin.com/in/kleberson-andrade-47187520a/'}
             aria-label="Link para o meu linkedin."
+            tabindex="0"
+            target={'_blank'}
           >
-            <a target={'_blank'}>
-              <BsLinkedin
-                size={30}
-                fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
-              />
-            </a>
-          </Link>
+            <BsLinkedin
+              size={30}
+              fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body}
+            />
+          </a>
         </motion.div>
 
         <Line
